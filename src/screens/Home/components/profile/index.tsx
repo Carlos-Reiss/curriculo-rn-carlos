@@ -12,7 +12,7 @@ import {
   ViewButtonProfile,
   ViewCardInfo,
   ViewInfo,
-  ViewName
+  ViewName,
 } from "./styles";
 
 type ProfileProps = { onPress: () => void };
@@ -39,7 +39,7 @@ const Profile = ({ onPress }: ProfileProps) => {
           <ViewName>
             <TextName>Carlos Antonio Reis</TextName>
           </ViewName>
-          <ViewBio>
+          <ViewBio showsVerticalScrollIndicator={false}>
             <TextBio>
               Estudante de Ciência da Computação na Universidade Católica de
               Pernambuco, também estudando diversas tecnologias do mercado.

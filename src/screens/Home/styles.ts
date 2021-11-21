@@ -4,7 +4,7 @@ import styles from "styled-components/native";
 export const Container = styles.View({
   flex: 1,
   alignItems: "center",
-  paddingTop: Platform.OS === "ios" ? 80 : 220,
+  paddingTop: Platform.OS === "ios" ? 80 : 150,
   backgroundColor: "#748c94",
 });
 
@@ -12,7 +12,7 @@ export const Cards = styles.View({
   marginTop: 20,
 
   width: "80%",
-  minHeight: Platform.OS === "ios" ? "40%" : "50%",
+  minHeight: Platform.OS === "ios" ? "40%" : "40%",
 
   flexDirection: "row",
   justifyContent: "space-around",
@@ -22,6 +22,7 @@ export const ActionCard = styles.View({
   flex: 1,
   borderRadius: 8,
   backgroundColor: "#506268",
+  justifyContent: "flex-start",
 });
 
 export const ViewButton = styles.View({
@@ -49,4 +50,16 @@ export const ButtonAction = styles.TouchableOpacity({
 export const ButtonTextGo = styles.Text({
   color: "#FFF",
   textAlign: "right",
+});
+
+export const InfoAction = styles.View({
+  alignItems: "center",
+  justifyContent: "center",
+  paddingTop: 16,
+});
+
+export const SimpleText = styles.Text({
+  color: "#FFF",
+  width: "80%",
+  paddingBottom: 6,
 });

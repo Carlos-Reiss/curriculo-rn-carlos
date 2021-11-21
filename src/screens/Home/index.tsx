@@ -1,5 +1,5 @@
 import React from "react";
-import { Platform, Text, View } from "react-native";
+import { Platform, ScrollView, Text, View } from "react-native";
 import { HomeScreenRouteProp } from "../../navigation/types";
 import Profile from "./components/profile";
 import { AntDesign } from "@expo/vector-icons";
@@ -11,6 +11,8 @@ import {
   ViewButton,
   ButtonAction,
   ButtonTextGo,
+  InfoAction,
+  SimpleText,
 } from "./styles";
 
 const Home = ({ navigation }: HomeScreenRouteProp) => {
@@ -25,9 +27,15 @@ const Home = ({ navigation }: HomeScreenRouteProp) => {
               <AntDesign name="arrowright" size={14} color="#FFF" />
             </ButtonAction>
           </ViewButton>
-          <View style={{ alignItems: "center" }}>
-            <Text>Oi</Text>
-          </View>
+          <InfoAction>
+            <SimpleText>Um pouco sobre Hobbies</SimpleText>
+            <SimpleText> - Adoro assistir series e filmes.</SimpleText>
+            <SimpleText> - Gosto bastante de ir a praia ver o mar.</SimpleText>
+            <SimpleText>
+              {" "}
+              - Adoro jogar jogos eletrónicos e de tabuleiro.
+            </SimpleText>
+          </InfoAction>
         </ActionCard>
 
         <ActionCard
@@ -41,7 +49,17 @@ const Home = ({ navigation }: HomeScreenRouteProp) => {
               <AntDesign name="arrowright" size={14} color="#FFF" />
             </ButtonAction>
           </ViewButton>
-          <Text>Oi</Text>
+          <InfoAction>
+            <SimpleText>Um pouco sobre curiosidades</SimpleText>
+            <SimpleText>
+              - Fui estagiário do TRE-PE, lá comecei minha jornada como
+              FullStack.
+            </SimpleText>
+            <SimpleText>
+              - Gosto de fazer compras de coisas que envolve tecnologia ou até
+              mesmo coisas para casa.
+            </SimpleText>
+          </InfoAction>
         </ActionCard>
       </Cards>
     </Container>

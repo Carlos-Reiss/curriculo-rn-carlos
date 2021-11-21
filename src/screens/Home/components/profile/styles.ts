@@ -3,7 +3,7 @@ import styles from "styled-components/native";
 
 export const ProfileContainer = styles.View({
   backgroundColor: "#506268",
-  height: Platform.OS === "ios" ? "25%" : "14%",
+  height: Platform.OS === "ios" ? "25%" : "20%",
   width: "80%",
   borderRadius: 8,
 });
@@ -61,13 +61,14 @@ export const ViewInfo = styles.View({
 
 export const ViewName = styles.View({});
 
-export const ViewBio = styles.View({
+export const ViewBio = styles.ScrollView({
   marginTop: 5,
 });
 
 export const TextName = styles.Text({
   color: "#f5f5f5",
-  fontSize: 13,
+  fontSize: 16,
+  fontWeight: "bold",
 });
 
 export const TextBio = styles.Text({
