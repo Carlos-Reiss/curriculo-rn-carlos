@@ -56,7 +56,7 @@ const Curiosities: React.FC<CuriositiesScreenRouteProp> = () => {
           <View style={{ width: "60%" }}>
             <TextDescription>
               Sobre aprendizagem, sempre fui uma pessoa que sabe aprender fácil
-              e bastante pró-ativo busco sempre está aprendendo algo legal.
+              e bastante proativo busco sempre está aprendendo algo legal.
             </TextDescription>
           </View>
         </DescriptionContainer>

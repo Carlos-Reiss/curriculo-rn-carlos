@@ -32,7 +32,6 @@ const Home = ({ navigation }: HomeScreenRouteProp) => {
             <SimpleText> - Adoro assistir series e filmes.</SimpleText>
             <SimpleText> - Gosto bastante de ir a praia ver o mar.</SimpleText>
             <SimpleText>
-              {" "}
               - Adoro jogar jogos eletrónicos e de tabuleiro.
             </SimpleText>
           </InfoAction>

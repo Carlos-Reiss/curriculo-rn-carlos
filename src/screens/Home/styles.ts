@@ -4,15 +4,16 @@ import styles from "styled-components/native";
 export const Container = styles.View({
   flex: 1,
   alignItems: "center",
-  paddingTop: Platform.OS === "ios" ? 80 : 150,
+  justifyContent: "center",
+  paddingTop: Platform.OS === "ios" ? 20 : 100,
   backgroundColor: "#748c94",
 });
 
 export const Cards = styles.View({
   marginTop: 20,
-
+  marginBottom: '30%',
   width: "80%",
-  minHeight: Platform.OS === "ios" ? "40%" : "40%",
+  minHeight: Platform.OS === "ios" ? "20%" : "20%",
 
   flexDirection: "row",
   justifyContent: "space-around",
@@ -53,6 +54,7 @@ export const ButtonTextGo = styles.Text({
 });
 
 export const InfoAction = styles.View({
+  // marginTop: "50%",
   alignItems: "center",
   justifyContent: "center",
   paddingTop: 16,
