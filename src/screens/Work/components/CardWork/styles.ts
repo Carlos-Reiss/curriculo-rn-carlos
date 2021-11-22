@@ -2,7 +2,7 @@ import styles from "styled-components/native";
 
 export const WorkContainer = styles.View({
   backgroundColor: "#506268",
-  height: 160,
+  height: 190,
   marginTop: 22,
   borderRadius: 20,
 });
@@ -29,13 +29,14 @@ export const WorkImageBorder = styles.View({
 export const ViewInfo = styles.View({
   width: "75%",
   height: "75%",
-  padding: 10,
+  paddingTop: 10,
+  paddingBottom: 10,
 });
 
 export const ViewName = styles.View({});
 
 export const ViewBio = styles.ScrollView({
-  marginTop: 5,
+  marginTop: 10,
 });
 
 export const TextName = styles.Text({

@@ -1,4 +1,5 @@
 import React from "react";
+import { View } from "react-native";
 import {
   WorkContainer,
   WorkImage,
@@ -39,7 +40,7 @@ const CardWork = ({ title, url, description, date }: WorkProp) => {
           <ViewDate>
             <TextDate>{date}</TextDate>
           </ViewDate>
-          <ViewBio>
+          <ViewBio contentContainerStyle={{ height: "100%" }}>
             <TextBio>{description}</TextBio>
           </ViewBio>
         </ViewInfo>
