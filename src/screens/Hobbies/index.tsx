@@ -28,7 +28,7 @@ const Hobbies: React.FC<HobbiesScreenRouteProp> = () => {
         <DescriptionContainer>
           <MaterialCommunityIcons name="beach" size={24} color="#2C363A" />
           <View style={{ width: "60%" }}>
-            <TextDescription>Gosto de ir a praia ver o mar.</TextDescription>
+            <TextDescription>Gosto de ir a praia ver o mar, praticar esportes principalmente jogar futebol.</TextDescription>
           </View>
         </DescriptionContainer>
 

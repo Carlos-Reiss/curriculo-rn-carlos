@@ -11,7 +11,7 @@ export const Container = styles.View({
 
 export const Cards = styles.View({
   marginTop: 20,
-  marginBottom: '30%',
+  marginBottom: "30%",
   width: "80%",
   minHeight: Platform.OS === "ios" ? "20%" : "20%",
 
@@ -62,6 +62,7 @@ export const InfoAction = styles.View({
 
 export const SimpleText = styles.Text({
   color: "#FFF",
+  fontSize: 12,
   width: "80%",
   paddingBottom: 6,
 });
